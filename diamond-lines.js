@@ -15,3 +15,4 @@ for (var r = 10; r <= 170; r = r + 10) {
   var endX1 = width - r;
   var endY1 = height/2 + r;
   line(startX1, startY1, endX1, endY1);
+}
