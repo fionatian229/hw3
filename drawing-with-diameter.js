@@ -1,14 +1,16 @@
 function setup() { 
-  createCanvas(400, 400);}
+  createCanvas(400, 400);
+  noStroke();
+}
 
 var diameter = 10;
 
 function draw() { 
   if (mouseIsPressed) {
-    ellipse(mouseX, mouseY, diameter);
+  ellipse(mouseX, mouseY, diameter);
   }
+  
 }
-
 
 function keyPressed() {
   print(key);
@@ -26,15 +28,14 @@ function keyPressed() {
   } else if (key == 'D'){
     fill (142, 99, 169);
   } 
-  else if (key == '1'){
-  ellipse(mouseX, mouseY, 10);
-  } else if (key == '2'){
-    ellipse(mouseX, mouseY, 15);
-  
+ 
+  if (key == 1) {
+    diameter = 10;
+  } else if (key == 2) {
+    diameter = 20;
+  } else if (key == 3) {
+    diameter = 30;
   }
-  else if (key == '3'){
-  ellipse(mouseX, mouseY, 20);
-    
-  }
+
     
 }
