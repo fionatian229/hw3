@@ -4,6 +4,7 @@ function setup() {
 
 var diameter = 10;
 
+
 function draw() { 
   if (mouseIsPressed) {
     ellipse(mouseX, mouseY, diameter);
@@ -43,3 +44,6 @@ function keyPressed() {
   }
     
 }
+
+
+
